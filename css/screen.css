@@ -1,0 +1,379 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face{
+	font-family: "calibri_light";
+	src: url('../fonts/CalibriL.ttf');
+}
+
+@font-face{
+	font-family: "calibri_bold";
+	src: ('../fonts/calibrib.ttf');	
+}
+
+@font-face{
+	font-family: "helvetica_light";
+	src: url(../fonts/HelveticaNeue-Light.otf);
+}
+
+body{
+	background-color: #efefef;
+	min-height: 100%;
+	height: 100%;
+}
+
+#home{
+	background: url("../images/homebg.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#wrapper{
+	width: 100%;
+	height: auto;
+	min-height: 100%;
+	min-width: 1000px;
+	top: 0px;
+	left: 0px;
+}
+
+#header{
+	position: absolute;
+	width: 100%;
+	height: 45px;
+	top: 0px;
+	left: 0px;
+	min-width: 1000px;
+	background-color: #14171f;	
+	box-shadow:1px 0px 16px #000000;
+}
+
+#logo{
+	position: absolute;
+	width: 50px;
+	height: 30px;
+	left: 65px;	
+}
+
+#logo h1{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	font-family: calibri_light;
+	color: #c2c2c3;
+	font-size: 18px;
+}
+
+#logo h2{
+	position: absolute;
+	left: 31px;
+	top: -15px;
+	font-family: Calibri;
+	color: #c2c2c3;
+	font-size: 25px;
+}
+
+#content{
+	position: absolute;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+}
+
+#title{
+	position: absolute;
+	width: 600px;
+	height: 100px;
+	top: 200px;
+	left: 200px;
+	//background-color: #CCC;
+	color: #eeeeee;
+	font-family: Calibri;
+	font-weight: bold;
+	font-size: 55px;
+	text-shadow: 2px 2px #000000;
+}
+
+#description{
+	position: absolute;
+	width: 500px;
+	height: 200px;
+	left: 200px;
+	top: 300px;	
+	font-family: Calibri;
+	color: #eeeeee;
+	font-size: 18px;
+	font-weight: 600;
+	text-shadow: 1.5px 1.5px #000000;
+}
+
+#about_button{
+	position: absolute;
+	left: 200px;
+	top: 425px;	
+	background-color: #14171f;
+	width: 120px;
+	height: 40px;	
+	border: 0px solid;
+	border-radius: 3px;
+	border-color: #0f1117;
+	color: #eeeeee;
+	text-align: center;
+	line-height: 40px;
+	font-family: Calibri;
+}
+
+#about_button:hover{
+	background-color: #1d222d;	
+}
+
+.contribute_button{
+	position: absolute;
+	background-color: #14171f;	
+	border: 0px solid;
+	border-radius: 3px;
+	border-color: #0f1117;
+	color: #eeeeee;
+	text-align: center;
+	font-family: Calibri;
+}
+
+#home_contribute_button{
+	left: 340px;
+	top: 425px;	
+	width: 120px;
+	height: 40px;
+	line-height: 40px;
+}
+
+#home_contribute_button:hover{
+	background-color: #1d222d;	
+}
+
+#about_contribute_button{
+	width: 200px;
+	height: 40px;
+	line-height: 40px;
+	left: 50%;
+	margin-left: -100px;
+}
+
+#contribute_button:hover{
+	background-color: #1d222d;	
+}
+
+#login{
+	position: absolute;
+	height: 45px;
+	width: 90px;
+	right: 70px;
+	font-family: Calibri;
+	line-height: 45px;
+	text-align: center;
+	padding-left: 15px;
+	color: #eeeeee;
+}
+
+#login_logo{
+	position: absolute;
+	background: url(../images/login.png);
+	width: 31px;
+	height: 35px;
+}
+
+#login:hover{
+	background-color: #1d222d;
+}
+
+#about_content{
+	position: absolute;
+	top: 80px;
+	width: 1000px;
+	margin-left: -500px;
+	left: 50%;	
+	z-index: -1;
+	font-family: helvetica_light;
+}
+
+#about_content h1{
+	text-align: center;
+	font-weight: lighter;
+	font-size: 40px;	
+}
+
+#about_content h2{
+	text-align: center;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+#about_content h3{
+	font-size: 15px;
+	font-weight: lighter;
+}
+
+#donation{
+	position: absolute;
+	right: -50px;
+	text-align: right;
+	width: 200px;
+	height: 100px;
+}
+
+#donation h4{
+	font-weight: bolder;
+	margin-top: 10px;
+	font-family: Calibri;
+	font-size: 30px;
+}
+
+#donation h5{
+	font-size: 18px;
+	margin-top: -43px;
+	font-weight: lighter;
+}
+
+#contribute{
+	position: absolute;
+	width: 100%;
+	height: 550px;
+	top: 50%;
+	margin-top: -275px;
+	left: 0px;
+	background: url(../images/contributebg.jpg) no-repeat;
+	background-size: cover;
+	z-index: -1;
+	min-width: 1000px;
+}
+
+#contribute_description{
+	position: absolute;
+	width: 500px;
+	height: 400px;
+	left: 50%;
+	margin-left: -500px;
+	margin-top: -200px;
+	top: 50%;
+	font-family: helvetica_light;
+	color: #ffffff;
+}
+
+#contribute_description h1{
+	text-align: center;
+	font-weight: lighter;
+}
+
+#contribute_description h2{
+	font-size: 14px;
+	font-weight: lighter;
+}
+
+#button_box{
+	position: absolute;
+	width: 500px;
+	height: 400px;
+	left: 50%;
+	margin-top: -200px;
+	top: 50%;
+}
+
+.contribution_button{
+	background-color: #67de67;
+	border-radius: 5px;
+	color: #000000;
+	font-family: helvetica_light;
+	position: absolute;
+	width: 350px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	margin-top: -25px;
+	margin-left: -175px;
+}
+
+.contribution_button:hover{
+	background-color: #43bd43;
+}
+
+
+#dro_button{
+	top: 30%;
+	left: 50%;
+}
+
+#volunteer_button{
+	top: 50%;
+	left: 50%;
+}
+
+#donate_button{
+	top: 70%;
+	left: 50%;
+}
+
+#donate_button a{
+	text-decoration: none;	
+}
+
+#dro_content{
+	position: absolute;
+	width: 1000px;
+	left: 50%;
+	top: 0px;
+	z-index: -1;
+	margin-left: -500px;
+	min-height: 100%;
+	//background-color: #ffffff;
+	font-family: helvetica_light;
+}
+
+#dro_content h1{
+	text-align: center;
+	padding-top: 65px;
+	font-size: 40px;
+	font-weight: lighter;
+}
+
+#progress_bar{
+	width: 70%;
+	height: 50px;
+	position: absolute;
+	//background-color: #ccc;
+	border-bottom: 1px solid;
+	border-bottom-color: #545d75;
+	left: 50%;
+	margin-left: -35%;
+}
+
+.bullet{
+	position: absolute;
+	width: 35px;
+	height: 35px;
+	border-radius: 60px;
+	bottom: -25px;
+	margin-left: -17.5px;
+	line-height: 35px;
+	left: 25%;
+	text-align: center;
+	font-size: 20px;
+	color: #ffffff;
+}
+
+#number_1{
+	left: 25%;
+	background-color: #f33232;
+}
+
+#number_2{
+	left: 50%;
+	background-color: #f33232;
+}
+
+#number_3{
+	left: 75%;
+	background-color: #f33232;
+}
+
+
