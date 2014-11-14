@@ -443,40 +443,12 @@ body{
 }
 
 .textbox_label{
-	position: absolute;
+	position: relative;
 	width: 100%;
 	height: 29px;
 	line-height: 29px;
+	margin-top: 20px;
 }
-
-#textbox_2{
-	top: 50px;
-}
-
-#textbox_3{
-	top: 100px;
-}
-
-#textbox_4{
-	top: 150px;
-}
-
-#textbox_5{
-	top: 200px;
-}
-
-#textbox_6{
-	top: 290px;
-}
-
-#textbox_7{
-	top: 100px;	
-}
-
-#textbox_8{
-	top: 180px;	
-}
-
 
 .continue_button{
 	width: 250px;
@@ -486,13 +458,14 @@ body{
 	border-radius: 4px;
 	color: #ffffff;	
 	line-height: 35px;
-	position: absolute;
+	position: relative;
 	left: 50%;
 	margin-left: -125px;
+	margin-top: 40px;
 }
 
-#continue_dro_1{
-	top: 650px;	
+#form a{
+	text-decoration: none;	
 }
 
 .textarea{
@@ -509,6 +482,14 @@ body{
 	padding-left: 10px;
 	padding-right: 10px;
 	resize: none;
+}
+
+.textarea_label{
+	position: relative;
+	width: 100%;
+	height: 120px;
+	line-height: 29px;
+	margin-top: 20px;
 }
 
 .notification{
