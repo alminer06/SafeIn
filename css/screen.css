@@ -181,6 +181,17 @@ body{
 	background: url(../images/login.png);
 	width: 31px;
 	height: 35px;
+	top: 2px;
+	left: 8px;
+}
+
+#logout_logo{
+	position: absolute;
+	background: url(../images/logout.png);
+	width: 23px;
+	height: 25px;
+	top: 10px;
+	left: 8px;
 }
 
 #login:hover{
