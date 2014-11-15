@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
 <file name="login.html" server="C:/wamp/www" local="130604955686207197" remote="130604955680000000" Dst="0" />
-<file name="managesupport(1).html" server="C:/wamp/www" local="130604918308569318" remote="130604918300000000" Dst="0" />
 <file name="usernotification.html" server="C:/wamp/www" local="130604914488710835" remote="130604914480000000" Dst="0" />
 <file name="index.html" server="C:/wamp/www" local="130602813504500945" remote="130602813500000000" Dst="0" />
 <file name="index.html" server="C:/wamp/www/SafeIn" local="130602813504500945" remote="130602813500000000" Dst="0" />
 <file name="contribute.html" server="C:/wamp/www/SafeIn" local="130604590021957051" remote="130604590020000000" Dst="0" />
 <file name="donationform1.html" server="C:/wamp/www/SafeIn" local="130604640885066255" remote="130604640880000000" Dst="0" />
 <file name="droregistration1.html" server="C:/wamp/www/SafeIn" local="130604636566749261" remote="130604636560000000" Dst="0" />
-<file name="redirect.php" server="C:/wamp/www/SafeIn" local="130604956397027854" remote="130604956390000000" Dst="0" />
-<file name="login.html" server="C:/wamp/www/SafeIn" local="130604955686207197" remote="130604955680000000" Dst="0" />
-<file name="managesupport(1).html" server="C:/wamp/www/SafeIn" local="130604918308569318" remote="130604918300000000" Dst="0" />
-<file name="usernotification.html" server="C:/wamp/www/SafeIn" local="130604914488710835" remote="130604914480000000" Dst="0" />
+<file name="login.html" server="C:/wamp/www/SafeIn" local="130605325784369990" remote="130605325780000000" Dst="0" />
+<file name="usernotification.html" server="C:/wamp/www/SafeIn" local="130605281118555252" remote="130605281110000000" Dst="0" />
 <file name="volunteerregistration1.html" server="C:/wamp/www/SafeIn" local="130604639116025071" remote="130604639110000000" Dst="0" />
 <file name="about.html" server="C:/wamp/www/SafeIn" local="130602821569366762" remote="130602821560000000" Dst="0" />
+<file name="managesupport(ViewVolunteers).html" server="C:/wamp/www/SafeIn" local="130605325130552594" remote="130605325130000000" Dst="0" />
+<file name="managesupport(ViewLogistics).html" server="C:/wamp/www/SafeIn" local="130605327242983418" remote="130605327240000000" Dst="0" />
+<file name="managesupport(ViewNeeds).html" server="C:/wamp/www/SafeIn" local="130605327688538902" remote="130605327680000000" Dst="0" />
+<file name="managesupport(Mapping).html" server="C:/wamp/www/SafeIn" local="130605328131554241" remote="130605328130000000" Dst="0" />
+<file name="managesupport(DistributionStatus).html" server="C:/wamp/www/SafeIn" local="130605328762570333" remote="130605328760000000" Dst="0" />
+<file name="transportation.html" server="C:/wamp/www/SafeIn" local="130605329719325057" remote="130605329710000000" Dst="0" />
+<file name="mapvisualization.html" server="C:/wamp/www/SafeIn" local="130605330507980165" remote="130605330500000000" Dst="0" />
 </dwsync>
