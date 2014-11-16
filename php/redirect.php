@@ -2,7 +2,7 @@
 	$username = $_POST['username'];
 	$password = $_POST['password'];
 	if($username == "admin" && $password == "admin"){
-		header("Location: ../managesupport(ViewVolunteers).html");	
+		header("Location: ../admin_page/managesupport(ViewVolunteers).html");	
 	}else{
 		header("Location: ../usernotification.html");		
 	}

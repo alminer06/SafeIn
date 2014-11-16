@@ -474,6 +474,21 @@ body{
 	padding-right: 10px;
 }
 
+.dropdown_menu{
+	background-color: #cfcdcd;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #919191;
+	margin-right: 0px;
+	position: absolute;
+	width: 420px;
+	height: 25px;
+	font-size: 15px;
+	right:0px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
 .textbox_label{
 	position: relative;
 	width: 100%;
@@ -753,6 +768,16 @@ body{
 	z-index: 1;	
 	right: 0px;
 	top: 0px;
+}
+
+#card2{
+	position: absolute;
+	width: 50px;
+	height: 32px;
+	background: url(../images/CVV.PNG);
+	z-index: 1;	
+	right: 0px;
+	top: -2px;
 }
 
 #received_button{
