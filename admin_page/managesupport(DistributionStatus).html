@@ -3,6 +3,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" type="text/css" href="../css/screen.css" />
+<link rel="stylesheet" type="text/css" href="../css/table.css" />
+<link rel="stylesheet" type="text/css" href="../css/pagination.css" />
 <title>Manage Support - Distribution Status</title>
 </head>
 
@@ -23,7 +25,7 @@
             	<div class="category"><div id="triangle"></div>View</div>
                     <a href="managesupport(ViewVolunteers).html"><div class="category_menu">View volunteers</div></a>
                     <a href="managesupport(ViewLogistics).html"><div class="category_menu">View logistics</div></a>
-                    <a href="managesupport(ViewNeeds).html"><div class="category_menu">View needs</div></a>
+                    <a href="managesupport(ViewNeeds).html"><div class="category_menu">View requests</div></a>
                 <div class="category"><div id="triangle"></div>Site</div>
                 	<a href="managesupport(Mapping).html"><div class="category_menu">Mapping</div></a>
                 <div class="category"><div id="triangle"></div>Status</div>
@@ -31,11 +33,72 @@
             </div>
         </div>
         <div class="admin_content">
-        	Hendro, kontennya taruh di sini y<br />
-            Hendro, kontennya taruh di sini y<br />
-            Hendro, kontennya taruh di sini y<br />
-            Hendro, kontennya taruh di sini y<br />
-            Hendro, kontennya taruh di sini y<br />
+        	<div class="title_admin">
+				<h1>DISTRIBUTION STATUS</h1>
+			</div>
+			<br />
+			<br />
+			<br />
+
+			
+			<table class="hovertable" width="100%">
+				<tr>
+					<th align="center" width="30px">No</th>
+					<th align="center">Full Name</th>
+					<th align="center">Contact</th>
+					<th align="center">Shelter Site</th>
+					<th align="center">Site</th>
+					<th align="center">Map</th>
+					<th align="center">Status</th>
+				</tr>
+				<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4d4d4';">
+					<td align="center">1</td>
+					<td align="left">Roy Nastri</td>
+					<td align="left">+62 876 878 666</td>
+					<td align="left">1</td>
+					<td align="left">A</td>
+					<td align="center"><img class="img_border_b" src="../images/site_2.png" width="176" height="129"/></td>
+					<td align="center">
+						<div><span class="green">Arrived</span></div>
+					</td>
+				</tr>
+				<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4d4d4';">
+					<td align="center">2</td>
+					<td align="left">Austri Maulida</td>
+					<td align="left">+62 756 753 989</td>
+					<td align="left">2</td>
+					<td align="left">A</td>
+					<td align="center"><img class="img_border_b" src="../images/site_2.png" width="176" height="129"/></td>
+					<td align="center">
+						<div><span class="red">To be distributed</span></div>
+					</td>
+				</tr>
+				<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4d4d4';">
+					<td align="center">3</td>
+					<td align="left">Yudha Pristo</td>
+					<td align="left">+62 545 443 555</td>
+					<td align="left">1</td>
+					<td align="left">C</td>
+					<td align="center"><img class="img_border_b" src="../images/site_2.png" width="176" height="129"/></td>
+					<td align="center">
+						<div><span class="blue">On the way</span></div>
+					</td>
+				</tr>
+				
+				
+			</table>
+			<table style="float: right">
+				<tr>
+					<td>
+						<ul class="pagination pagination-sm">
+							<li><a href="#"><span aria-hidden="true">&laquo;</span><span class="sr-only">Previous</span></a></li>
+							<li class="active"><span>1 <span class="sr-only">(current)</span></span></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#"><span aria-hidden="true">&raquo;</span><span class="sr-only">Next</span></a></li>
+						</ul>
+					</td>
+				</tr>
+			</table>
         </div>  
        
         

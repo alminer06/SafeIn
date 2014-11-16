@@ -3,6 +3,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" type="text/css" href="../css/screen.css" />
+<link rel="stylesheet" type="text/css" href="../css/table.css" />
+<link rel="stylesheet" type="text/css" href="../css/pagination.css" />
 <title>Manage Support - View needs</title>
 </head>
 
@@ -23,7 +25,7 @@
             	<div class="category"><div id="triangle"></div>View</div>
                     <a href="managesupport(ViewVolunteers).html"><div class="category_menu">View volunteers</div></a>
                     <a href="managesupport(ViewLogistics).html"><div class="category_menu">View logistics</div></a>
-                    <a href="managesupport(ViewNeeds).html"><div class="category_menu" id="selected_category_menu">View needs</div></a>
+                    <a href="managesupport(ViewNeeds).html"><div class="category_menu" id="selected_category_menu">View requests</div></a>
                 <div class="category"><div id="triangle"></div>Site</div>
                 	<a href="managesupport(Mapping).html"><div class="category_menu">Mapping</div></a>
                 <div class="category"><div id="triangle"></div>Status</div>
@@ -31,11 +33,105 @@
             </div>
         </div>
         <div class="admin_content">
-        	Hendro, kontennya taruh di sini y<br />
-            Hendro, kontennya taruh di sini y<br />
-            Hendro, kontennya taruh di sini y<br />
-            Hendro, kontennya taruh di sini y<br />
-            Hendro, kontennya taruh di sini y<br />
+        	<div class="title_admin">
+				<h1>Supports Requests - Japan's Earthquake Disaster</h1>
+			</div>
+			<div class="map-thumb">
+				<div>Shelter Site 2 <span class="note">*Click image to see other shelter site</span></div>
+				<a href="managesupport(Mapping).html"><img class="img_border_b" src="../images/site.PNG"/></a>
+			</div>
+			<div class="clear"></div>
+			<table width="600px">
+				<tr>
+					<td>Volunteers Needed: <span class="seratus red">100</span></td>
+					<td class="right"> <a href="managesupport(AddSupport).html"><div class="add_support_button">Add Support</div></a></td>
+				</tr>
+			</table>
+			<div class="clear"></div>
+			<div>
+				<div class="op_order">
+					<table>
+						<tr>
+							<td>Order By :</td>
+						</tr>
+						<tr>
+							<td><input type="radio" name="radiog_dark" id="radio1" /><label for="radio1">Name</label></td>
+							<td><input type="radio" name="radiog_dark" id="radio2" checked="checked"/><label for="radio2">Type</label></td>
+							<td><input type="radio" name="radiog_dark" id="radio3" /><label for="radio3">Amount</label></td>
+							<td><input type="radio" name="radiog_dark" id="radio3" /><label for="radio3">Received</label></td>
+							<td><input type="radio" name="radiog_dark" id="radio3" /><label for="radio3">Remaining</label></td>
+						</tr>
+					</table>
+				</div>
+				<div class="search_box">
+					<form>
+						<input class="search" type="text" placeholder="Search..." required>
+						<input class="button-search"type="button" value="Search">
+					</form>
+				</div>
+			</div>
+			
+			<table class="hovertable" width="100%">
+				<tr>
+					<th align="center" width="30px">No</th>
+					<th align="center">Name</th>
+					<th align="center">Type</th>
+					<th align="center">Amount</th>
+					<th align="center">Received</th>
+					<th align="center">Remaining</th>
+				</tr>
+				<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4d4d4';">
+					<td align="center">1</td>
+					<td align="left">Blancket</td>
+					<td align="left">Clothing</td>
+					<td align="left">100</td>
+					<td align="left" class="green">50</td>
+					<td align="left" class="red">50</td>
+				</tr>
+				<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4d4d4';">
+					<td align="center">2</td>
+					<td align="left">Panadol</td>
+					<td align="left">Drug</td>
+					<td align="left">50</td>
+					<td align="left" class="green">33</td>
+					<td align="left" class="red">17</td>
+				</tr>
+				<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4d4d4';">
+					<td align="center">3</td>
+					<td align="left">Rice</td>
+					<td align="left">Food</td>
+					<td align="left">200</td>
+					<td align="left" class="green">170</td>
+					<td align="left" class="red">30</td>
+				</tr>
+				<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4d4d4';">
+					<td align="center">4</td>
+					<td align="left">Shirt</td>
+					<td align="left">Clothing</td>
+					<td align="left">200</td>
+					<td align="left" class="green">90</td>
+					<td align="left" class="red">110</td>
+				</tr>
+				<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4d4d4';">
+					<td align="center">5</td>
+					<td align="left">Instant Noodle</td>
+					<td align="left">Food</td>
+					<td align="left">200</td>
+					<td align="left" class="green">200</td>
+					<td align="left" class="red">0</td>
+				</tr>
+			</table>
+			<table style="float: right">
+				<tr>
+					<td>
+						<ul class="pagination pagination-sm">
+							<li><a href="#"><span aria-hidden="true">&laquo;</span><span class="sr-only">Previous</span></a></li>
+							<li class="active"><span>1 <span class="sr-only">(current)</span></span></li>
+							<li><a href="#"><span aria-hidden="true">&raquo;</span><span class="sr-only">Next</span></a></li>
+						</ul>
+					</td>
+				</tr>
+			</table>
         </div>  
        
         

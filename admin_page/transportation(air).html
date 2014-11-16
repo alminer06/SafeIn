@@ -5,7 +5,7 @@
 <link rel="stylesheet" type="text/css" href="../css/screen.css" />
 <link rel="stylesheet" type="text/css" href="../css/table.css" />
 <link rel="stylesheet" type="text/css" href="../css/pagination.css" />
-<title>Manage Support - View logistics</title>
+<title>Transportation</title>
 </head>
 
 <body>
@@ -22,36 +22,21 @@
         </div>
         <div id="sidebar">
         	<div id="sidebar_wrapper">
-            	<div class="category"><div id="triangle"></div>View</div>
-                    <a href="managesupport(ViewVolunteers).html"><div class="category_menu">View volunteers</div></a>
-                    <a href="managesupport(ViewLogistics).html"><div class="category_menu" id="selected_category_menu">View logistics</div></a>
-                    <a href="managesupport(ViewNeeds).html"><div class="category_menu">View requests</div></a>
-                <div class="category"><div id="triangle"></div>Site</div>
-                	<a href="managesupport(Mapping).html"><div class="category_menu">Mapping</div></a>
-                <div class="category"><div id="triangle"></div>Status</div>
-					<a href="managesupport(DistributionStatus).html"><div class="category_menu">Distribution status</div></a>
+            	<div class="category"><div id="triangle"></div>Vehicles</div>
+                	<a href="transportation.html"><div class="category_menu" id="selected_category_menu">View vehicles</div></a>
+                    <a href><div class="category_menu">Update</div></a>
+                <div class="category"><div id="triangle"></div>Map</div>
+                	<a href="transportation(route).html"><div class="category_menu">Transportation route</div></a>
             </div>
         </div>
         <div class="admin_content">
         	<div class="title_admin">
-				<h1>Available Logistics</h1>
+				<h1>Air Vehicles</h1>
 			</div>
 			<br />
 			<br />
 			<br />
 			<div>
-				<div class="op_order">
-					<table>
-						<tr>
-							<td>Order By :</td>
-						</tr>
-						<tr>
-							<td><input type="radio" name="radiog_dark" id="radio1" /><label for="radio1">Name</label></td>
-							<td><input type="radio" name="radiog_dark" id="radio2" checked="checked"/><label for="radio2">Type</label></td>
-							<td><input type="radio" name="radiog_dark" id="radio3" /><label for="radio3">Weight</label></td>
-						</tr>
-					</table>
-				</div>
 				<div class="search_box">
 					<form>
 						<input class="search" type="text" placeholder="Search..." required>
@@ -63,80 +48,80 @@
 			<table class="hovertable" width="100%">
 				<tr>
 					<th align="center" width="30px">No</th>
-					<th align="center">Name</th>
+					<th align="center">Vehicle Code</th>
 					<th align="center">Type</th>
-					<th align="center" width="200px">Weight(per unit)</th>
-					<th align="center" width="200px">Amount</th>
+					<th align="center" width="200px">Current Location</th>
+					<th align="center" width="200px">Availability</th>
 				</tr>
 				<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4d4d4';">
 					<td align="center">1</td>
-					<td align="left">Instant Noodle</td>
-					<td align="left">Food</td>
-					<td align="left">50g</td>
-					<td align="left">200</td>
+					<td align="left">QR4012</td>
+					<td align="left">Plane</td>
+					<td align="left">37.725849, -90.843084</td>
+					<td align="left">Available</td>
 				</tr>
 				<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4d4d4';">
 					<td align="center">2</td>
-					<td align="left">Rice</td>
-					<td align="left">Food</td>
-					<td align="left">1kg</td>
-					<td align="left">100</td>
+					<td align="left">QR1992</td>
+					<td align="left">Plane</td>
+					<td align="left">37.725849, -90.843084</td>
+					<td align="left">Available</td>
 				</tr>
 				<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4d4d4';">
 					<td align="center">3</td>
-					<td align="left">Blanket</td>
-					<td align="left">Clothing</td>
-					<td align="left">500g</td>
-					<td align="left">88</td>
+					<td align="left">QR0192</td>
+					<td align="left">Plane</td>
+					<td align="left">29.261822, -94.873666</td>
+					<td align="left">Not Available</td>
 				</tr>
 				<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4d4d4';">
 					<td align="center">4</td>
-					<td align="left">Panadol</td>
-					<td align="left">Drug</td>
-					<td align="left">100mg</td>
-					<td align="left">100</td>
+					<td align="left">HL9102</td>
+					<td align="left">Helicopter</td>
+					<td align="left">37.725849, -90.843084</td>
+					<td align="left">Available</td>
 				</tr>
 				<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4d4d4';">
 					<td align="center">5</td>
-					<td align="left">Jacket</td>
-					<td align="left">Clothing</td>
-					<td align="left">200g</td>
-					<td align="left">200</td>
+					<td align="left">HL7739</td>
+					<td align="left">Helicopter</td>
+					<td align="left">37.725849, -90.843084</td>
+					<td align="left">Available</td>
 				</tr>
 				<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4d4d4';">
 					<td align="center">6</td>
-					<td align="left">Konidin</td>
-					<td align="left">Drug</td>
-					<td align="left">100mg</td>
-					<td align="left">66</td>
+					<td align="left">GT0192</td>
+					<td align="left">Rotorcraft</td>
+					<td align="left">37.725849, -90.843084</td>
+					<td align="left">Available</td>
 				</tr>
 				<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4d4d4';">
 					<td align="center">7</td>
-					<td align="left">Panadol</td>
-					<td align="left">Drug</td>
-					<td align="left">10g</td>
-					<td align="left">100</td>
+					<td align="left">JG1928</td>
+					<td align="left">Rotorcraft</td>
+					<td align="left">29.261822, -94.873666</td>
+					<td align="left">Not Available</td>
 				</tr>
 				<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4d4d4';">
 					<td align="center">8</td>
-					<td align="left">Instant Noodle</td>
-					<td align="left">Food</td>
-					<td align="left">50g</td>
-					<td align="left">200</td>
+					<td align="left">QR1231</td>
+					<td align="left">Plane</td>
+					<td align="left">29.261822, -94.873666</td>
+					<td align="left">Not Available</td>
 				</tr>
 				<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4d4d4';">
 					<td align="center">9</td>
-					<td align="left">Panadol</td>
-					<td align="left">Drug</td>
-					<td align="left">10g</td>
-					<td align="left">100</td>
+					<td align="left">HL0091</td>
+					<td align="left">Helicopter</td>
+					<td align="left">37.725849, -90.843084</td>
+					<td align="left">Available</td>
 				</tr>
 				<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4d4d4';">
 					<td align="center">10</td>
-					<td align="left">Rice</td>
-					<td align="left">Food</td>
-					<td align="left">1kg</td>
-					<td align="left">100</td>
+					<td align="left">KL9872</td>
+					<td align="left">Rotorcraft</td>
+					<td align="left">37.725849, -90.843084</td>
+					<td align="left">Available</td>
 				</tr>
 			</table>
 			<table style="float: right">
@@ -148,16 +133,13 @@
 							<li><a href="#">2</a></li>
 							<li><a href="#">3</a></li>
 							<li><a href="#">4</a></li>
-							<li><a href="#">5</a></li>
 							<li><a href="#"><span aria-hidden="true">&raquo;</span><span class="sr-only">Next</span></a></li>
 						</ul>
 					</td>
 				</tr>
 			</table>
-        </div>  
-       
-        
-        
+        </div> 
+
 	</div>
 
 </body>

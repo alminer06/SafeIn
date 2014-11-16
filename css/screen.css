@@ -34,7 +34,7 @@ body{
 	width: 100%;
 	height: auto;
 	min-height: 100%;
-	min-width: 1100px;
+	min-width: 1000px;
 	top: 0px;
 	left: 0px;
 }
@@ -481,7 +481,7 @@ body{
 	border-color: #919191;
 	margin-right: 0px;
 	position: absolute;
-	width: 420px;
+	width: 421px;
 	height: 25px;
 	font-size: 15px;
 	right:0px;
@@ -638,6 +638,7 @@ body{
 #sidebar{
 	width: 200px;
 	height: 100%;
+	min-height: 500px;
 	background-color: #dadada;
 	position: fixed;
 	left: 0px;
@@ -695,6 +696,17 @@ body{
     box-sizing: border-box; 
 }
 
+.category_menu2{
+	position: relative;
+	width: 200px;
+	height: 45px;
+	line-height: 45px;
+	padding-left: 60px;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box; 
+}
+
 .category_menu:hover{
 	background-color: #c6c6c6;	
 }
@@ -710,8 +722,19 @@ body{
 .admin_content{
 	position: absolute;
 	z-index: -1;
+	width: calc(100% - 220px);
+	height: calc(100% - 60px);
+	box-sizing: border-box;
+	//background-color: #ffffff;
 	margin-left: 200px;
 	margin-top: 45px;
+	overflow-x: scroll;
+	overflow-y: scroll;
+	padding-left: 30px;
+	padding-right: 30px;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box; 
 }
 
 #dropdown_menu1{
@@ -885,4 +908,224 @@ body{
 
 #confirmation_box a{
 	text-decoration: none;	
+}
+
+.map{
+	width: 900px;
+	height: 540px;
+	background: url(../images/map.jpg);
+	position: absolute;
+	background-color: #FFF;
+	left: 50%;
+	margin-left: -450px;
+	top: 50%;
+	margin-top: -270px;
+}
+
+.map2{
+	width: 900px;
+	height: 540px;
+	background: url(../images/map2.jpg);
+	position: relative;
+	left: 50%;
+	margin-left: -450px;
+	top: 50%;
+	margin-top: -310px;
+}
+
+.bluepin{
+	width: 34px;
+	height: 57px;
+	background: url(../images/blue.png);
+}
+
+.redpin{
+	width: 34px;
+	height: 57px;
+	background: url(../images/red.png);
+}
+
+#redpin1{
+	position: absolute;
+	left: 270px;
+	top: 200px;	
+}
+
+#redpin2{
+	position: absolute;
+	left: 600px;
+	top: 60px;	
+}
+
+#bluepin1{
+	position: absolute;
+	left: 580px;
+	top: 270px;	
+}
+
+/******* TAMBAHAN *******/
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+.title_admin{
+	color: #4d4d4d;
+	font-family: helvetica_light;
+}
+
+.title_admin h2{
+	font-weight: lighter;	
+}
+
+.op_order{
+	float: left;
+}
+
+.search_box{
+	float: right;
+	margin-bottom: 30px;
+}
+.search {
+	padding:8px 15px;
+	background:rgba(50, 50, 50, 0.2);
+	border:0px solid #dbdbdb;
+}
+.button-search {
+	position:relative;
+	padding:6px 15px;
+	left:-8px;
+	border:2px solid #f33232;
+	background-color:#f33232;
+	color:#fafafa;
+}
+.button-search:hover  {
+	background-color:#fafafa;
+	color:#f33232;
+}
+
+
+.map-thumb {
+	/* border: 1px solid #999; 
+	background: #fff;  */
+	padding:0px 0 10px 0px;
+	font-size: 20px;
+	text-align: left;
+	float: right;
+}
+.map-thumb-border {
+	/* border: 1px solid #999; 
+	background: #fff;  */
+	padding:20px 70px 0 10px;
+	width: 246px;
+	text-align: center;
+	float: left;
+}
+.add_support_button{
+	width: 100px;
+	height: 35px;
+	background-color: #f33232;
+	text-align: center;
+	border-radius: 4px;
+	color: #ffffff;	
+	line-height: 35px;
+	position: relative;
+	left: 50%;
+	margin-left: -125px;
+}
+.note{
+	font-style: Italic;
+	font-size: 12px;
+}
+.seratus{
+	font-size: 24px;
+	font-style: Bold;
+}
+.green{
+	color: #28cc1b;
+	font-size: 15px;
+}
+.red{
+	color: #f33232;
+	font-size: 15px;
+}
+.blue{
+	color: #0c00ff;
+	font-size: 15px;
+}
+.left{ float: left; }
+.right{ float: right; }
+.clear { clear: both }
+.admin_content a{
+	text-decoration: none;	
+}
+
+#mapping_wrapper{
+	left: 50%;
+	margin-left: -450px;
+	width: 1000px;
+	height: 500px;
+	position: absolute;
+}
+
+#mapping_wrapper h1{
+	font-family: helvetica_light;
+	font-weight: lighter;	
+}
+
+.map_notif{
+	width: 301px;
+	height: 143px;
+	background:url(../images/notif.png);
+	position: absolute;
+	top: -150px;	
+}
+
+#vehicle_wrapper{
+	width: 100%;
+	height: 500px;
+	position: absolute;
+	//background-color: #333;
+	left: 30px;
+	top: 50px;	
+	font-family: helvetica_light;
+}
+
+.info{
+	width: 250px;
+	height: 250px;
+	background: #F9F9F9;
+	border: 1px solid #CCC;
+	float: left;
+	margin: 10px;
+	text-align: center;
+}
+
+.info a{
+	text-decoration: none;	
+	color: #000;
+}
+
+.info h1{
+	font-size: 70px;
+}
+
+.info h2{
+	font-size: 16px;
+	font-weight: lighter;
+}
+
+.info_header{
+	width: 250px;
+	height: 35px;
+	background: #CCC;
+	position: relative;	
+	border-bottom: 1px solid #999;
+	line-height: 35px;
+	font-size: 16px;
 }

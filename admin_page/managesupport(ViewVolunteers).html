@@ -3,6 +3,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" type="text/css" href="../css/screen.css" />
+<link rel="stylesheet" type="text/css" href="../css/table.css" />
+<link rel="stylesheet" type="text/css" href="../css/pagination.css" />
 <title>Manage Support - View volunteer</title>
 </head>
 
@@ -23,7 +25,7 @@
             	<div class="category"><div id="triangle"></div>View</div>
                     <a href="managesupport(ViewVolunteers).html"><div class="category_menu" id="selected_category_menu">View volunteers</div></a>
                     <a href="managesupport(ViewLogistics).html"><div class="category_menu">View logistics</div></a>
-                    <a href="managesupport(ViewNeeds).html"><div class="category_menu">View needs</div></a>
+                    <a href="managesupport(ViewNeeds).html"><div class="category_menu">View requests</div></a>
                 <div class="category"><div id="triangle"></div>Site</div>
                 	<a href="managesupport(Mapping).html"><div class="category_menu">Mapping</div></a>
                 <div class="category"><div id="triangle"></div>Status</div>
@@ -31,11 +33,140 @@
             </div>
         </div>
         <div class="admin_content">
-        	Hendro, kontennya taruh di sini y<br />
-            Hendro, kontennya taruh di sini y<br />
-            Hendro, kontennya taruh di sini y<br />
-            Hendro, kontennya taruh di sini y<br />
-            Hendro, kontennya taruh di sini y<br />
+        	<div class="title_admin">
+				<h1>Available Volunteers</h1>
+			</div>
+			<br />
+			<br />
+			<br />
+			<div>
+				<div class="op_order">
+					<table>
+						<tr>
+							<td>Order By :</td>
+						</tr>
+						<tr>
+							<td><input type="radio" name="radiog_dark" id="radio1" /><label for="radio1">Name</label></td>
+							<td><input type="radio" name="radiog_dark" id="radio2" checked="checked"/><label for="radio2">Skill</label></td>
+							<td><input type="radio" name="radiog_dark" id="radio3" /><label for="radio3">Willingness Placed</label></td>
+						</tr>
+					</table>
+				</div>
+				<div class="search_box">
+					<form>
+						<input class="search" type="text" placeholder="Search..." required>
+						<input class="button-search"type="button" value="Search">
+					</form>
+				</div>
+			</div>
+			
+			<table class="hovertable" width="100%">
+				<tr>
+					<th align="center" width="30px">No</th>
+					<th align="center">Full Name</th>
+					<th align="center">Phone Number</th>
+					<th align="center">Email Address</th>
+					<th align="center">Home Address</th>
+					<th align="center">Health Limitation</th>
+					<th align="center">Skill</th>
+					<th align="center">Emergency Contact</th>
+					<th align="center">Willingness Placed</th>
+				</tr>
+				<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4d4d4';">
+					<td align="center">1</td>
+					<td align="left">Roy Nastri</td>
+					<td align="left">+62 876 878 666</td>
+					<td align="left">roy@gmail.com</td>
+					<td align="left">JL. Gatot Subroto No. 02</td>
+					<td align="left"></td>
+					<td align="left"></td>
+					<td align="left">+68 777 777 777</td>
+					<td align="left">Japan Earthquake Disaster</td>
+				</tr>
+				<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4d4d4';">
+					<td align="center">2</td>
+					<td align="left">Austri Maulida</td>
+					<td align="left">+62 756 753 989</td>
+					<td align="left">austri@gmail.com</td>
+					<td align="left">JL. Sudirman No. 50</td>
+					<td align="left"></td>
+					<td align="left"></td>
+					<td align="left">+68 444 444 444</td>
+					<td align="left">Hawai's Volcano Eruption Disaster</td>
+				</tr>
+				<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4d4d4';">
+					<td align="center">3</td>
+					<td align="left">Yudha Pristo</td>
+					<td align="left">+62 545 443 555</td>
+					<td align="left">yudha@gmail.com</td>
+					<td align="left">JL. Pahlawan No. 33</td>
+					<td align="left"></td>
+					<td align="left"></td>
+					<td align="left">+68 222 222 222</td>
+					<td align="left">Japan Earthquake Disaster</td>
+				</tr>
+				<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4d4d4';">
+					<td align="center">4</td>
+					<td align="left">Krisna Mulya</td>
+					<td align="left">+62 212 876 333</td>
+					<td align="left">krisna@gmail.com</td>
+					<td align="left">JL. Panca No. 18</td>
+					<td align="left"></td>
+					<td align="left"></td>
+					<td align="left">+68 111 111 111</td>
+					<td align="left">Hawai's Volcano Eruption Disaster</td>
+				</tr>
+				<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4d4d4';">
+					<td align="center">5</td>
+					<td align="left">Lila Karmila</td>
+					<td align="left">+62 769 864 101</td>
+					<td align="left">lila@gmail.com</td>
+					<td align="left">JL. Lima No. 05</td>
+					<td align="left"></td>
+					<td align="left"></td>
+					<td align="left">+68 989 989 989</td>
+					<td align="left">Hawai's Volcano Eruption Disaster</td>
+				</tr>
+				<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4d4d4';">
+					<td align="center">6</td>
+					<td align="left">Lucy Auliani</td>
+					<td align="left">+62 102 898 009</td>
+					<td align="left">lucy@gmail.com</td>
+					<td align="left">JL. Marga Satya No. 90</td>
+					<td align="left"></td>
+					<td align="left"></td>
+					<td align="left">+68 444 443 222</td>
+					<td align="left">Hawai's Volcano Eruption Disaster</td>
+				</tr>
+				<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4d4d4';">
+					<td align="center">7</td>
+					<td align="left">Lila Karmila</td>
+					<td align="left">+62 769 864 101</td>
+					<td align="left">lila@gmail.com</td>
+					<td align="left">JL. Lima No. 05</td>
+					<td align="left"></td>
+					<td align="left"></td>
+					<td align="left">+68 989 989 989</td>
+					<td align="left">Hawai's Volcano Eruption Disaster</td>
+				</tr>
+				
+				
+			</table>
+			<table style="float: right">
+				<tr>
+					<td>
+						<ul class="pagination pagination-sm">
+							<li><a href="#"><span aria-hidden="true">&laquo;</span><span class="sr-only">Previous</span></a></li>
+							<li class="active"><span>1 <span class="sr-only">(current)</span></span></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
+							<li><a href="#"><span aria-hidden="true">&raquo;</span><span class="sr-only">Next</span></a></li>
+						</ul>
+					</td>
+				</tr>
+			</table>
         </div>             
 	</div>
 
