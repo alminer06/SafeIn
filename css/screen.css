@@ -376,13 +376,13 @@ body{
 }
 
 #form{
-	width: 70%;
+	width: 60%;
 	height: 100px;
 	position: relative;
 	//background-color: #ccc;
 	top: 120px;
 	left: 50%;
-	margin-left: -35%;
+	margin-left: -30%;
 }
 
 .bullet_number1{
@@ -456,7 +456,7 @@ body{
 	border-color: #919191;
 	margin-right: 0px;
 	position: absolute;
-	width: 475px;
+	width: 400px;
 	height: 25px;
 	font-size: 15px;
 	right:0px;
@@ -470,6 +470,7 @@ body{
 	height: 29px;
 	line-height: 29px;
 	margin-top: 20px;
+	//background-color: #ffffff;
 }
 
 .continue_button{
@@ -484,6 +485,18 @@ body{
 	left: 50%;
 	margin-left: -125px;
 	margin-top: 40px;
+}
+
+.back_button{
+	width: 250px;
+	height: 35px;
+	text-align: center;
+	color: #000;	
+	line-height: 35px;
+	position: relative;
+	left: 50%;
+	margin-left: -125px;
+	font-size: 13px;
 }
 
 #form a{
@@ -659,3 +672,58 @@ body{
 	margin-top: 45px;
 }
 
+#dropdown_menu1{
+	background-color: #cfcdcd;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #919191;
+	margin-right: 0px;
+	position: absolute;
+	width: 200px;
+	height: 25px;
+	font-size: 15px;
+	right:222px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#dropdown_menu2{
+	background-color: #cfcdcd;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #919191;
+	margin-right: 0px;
+	position: absolute;
+	width: 200px;
+	height: 25px;
+	font-size: 15px;
+	right:0px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+::-webkit-input-placeholder {
+   color: #666;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #666;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #666;  
+}
+
+:-ms-input-placeholder {  
+   color: #666;  
+}
+
+#card{
+	position: absolute;
+	width: 169px;
+	height: 32px;
+	background: url(../images/Capture.PNG);
+	z-index: 1;	
+	right: 0px;
+	top: 0px;
+}
