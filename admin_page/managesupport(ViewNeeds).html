@@ -5,8 +5,33 @@
 <link rel="stylesheet" type="text/css" href="../css/screen.css" />
 <link rel="stylesheet" type="text/css" href="../css/table.css" />
 <link rel="stylesheet" type="text/css" href="../css/pagination.css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <title>Manage Support - View needs</title>
 </head>
+
+<script>
+
+	$(document).ready(function(){
+		$("#send1").click(function(){
+		  $("#logistic1").css("display", "table-row");
+		  $("#add0").css("display", "none");
+		  $("#add1").css("display", "table-row");
+		});
+		
+		$("#send2").click(function(){
+		  $("#logistic2").css("display", "table-row");
+		  $("#add1").css("display", "none");
+		  $("#add2").css("display", "table-row");
+		});
+		
+		$("#send3").click(function(){
+		  $("#logistic3").css("display", "table-row");
+		  $("#add1").css("display", "none");
+		  $("#add2").css("display", "table-row");
+		});
+	});
+	
+</script>
 
 <body>
 
@@ -36,15 +61,23 @@
         	<div class="title_admin">
 				<h1>Supports Requests - Japan's Earthquake Disaster</h1>
 			</div>
-			<div class="map-thumb">
-				<div>Shelter Site 2 <span class="note">*Click image to see other shelter site</span></div>
-				<a href="managesupport(Mapping).html"><img class="img_border_b" src="../images/site.PNG"/></a>
-			</div>
+            <div>
+            	<div style="float:left">
+                	<h2> Message : </h2>
+                    From: User<br />
+                    Saturday, November 8 2014 18:30<br />
+                    We request of 10 kg of rice, 20 liters of water,<br />50 packages of noodles, and 5 physician for shelter site-2
+                </div>
+                <div class="map-thumb" style="float:right">
+                    <div>Shelter Site 2 <span class="note">*Click image to see other shelter site</span></div>
+                    <a href="managesupport(Mapping).html"><img class="img_border_b" src="../images/site.PNG"/></a>
+                </div>
+             </div>
 			<div class="clear"></div>
 			<table width="600px">
 				<tr>
-					<td>Volunteers Needed: <span class="seratus red">100</span></td>
-					<td class="right"> <a href="managesupport(AddSupport).html"><div class="add_support_button">Add Support</div></a></td>
+					<td>Volunteers Needed: <span class="seratus red">5</span></td>
+					<td class="right"> <a href="managesupport(AddSupport).html"><div class="add_support_button">Send Support</div></a></td>
 				</tr>
 			</table>
 			<div class="clear"></div>
@@ -80,46 +113,55 @@
 					<th align="center">Received</th>
 					<th align="center">Remaining</th>
 				</tr>
-				<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4d4d4';">
+                <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4d4d4';" id="logistic1">
 					<td align="center">1</td>
-					<td align="left">Blancket</td>
-					<td align="left">Clothing</td>
-					<td align="left">100</td>
-					<td align="left" class="green">50</td>
-					<td align="left" class="red">50</td>
-				</tr>
-				<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4d4d4';">
-					<td align="center">2</td>
-					<td align="left">Panadol</td>
-					<td align="left">Drug</td>
-					<td align="left">50</td>
-					<td align="left" class="green">33</td>
-					<td align="left" class="red">17</td>
-				</tr>
-				<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4d4d4';">
-					<td align="center">3</td>
 					<td align="left">Rice</td>
 					<td align="left">Food</td>
-					<td align="left">200</td>
-					<td align="left" class="green">170</td>
-					<td align="left" class="red">30</td>
+					<td align="left">10 kg</td>
+					<td align="left" class="green">0 kg</td>
+					<td align="left" class="red">10 kg</td>
 				</tr>
-				<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4d4d4';">
-					<td align="center">4</td>
-					<td align="left">Shirt</td>
-					<td align="left">Clothing</td>
-					<td align="left">200</td>
-					<td align="left" class="green">90</td>
-					<td align="left" class="red">110</td>
-				</tr>
-				<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4d4d4';">
-					<td align="center">5</td>
-					<td align="left">Instant Noodle</td>
+                <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4d4d4';" id="logistic2">
+					<td align="center">2</td>
+					<td align="left">Water</td>
 					<td align="left">Food</td>
-					<td align="left">200</td>
-					<td align="left" class="green">200</td>
-					<td align="left" class="red">0</td>
+					<td align="left">20 liters</td>
+					<td align="left" class="green">0 liters</td>
+					<td align="left" class="red">20 liters</td>
 				</tr>
+                <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4d4d4';" id="logistic3">
+					<td align="center">3</td>
+					<td align="left">Noodles</td>
+					<td align="left">Food</td>
+					<td align="left">50 packages</td>
+					<td align="left" class="green">0 package</td>
+					<td align="left" class="red">50 packages</td>
+				</tr>
+				<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4d4d4';" id="add0">
+					<td align="center"><input type="button" value="Send" id="send1"/></td>
+					<td align="left"><input type="text" /></td>
+					<td align="left"><input type="text" /></td>
+					<td align="left"><input type="text" /></td>
+					<td align="left" class="green"><input type="text" id="hidden"/></td>
+					<td align="left" class="red"><input type="text" id="hidden"/></td>
+				</tr>
+                <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4d4d4';" id="add1">
+					<td align="center"><input type="button" value="Send" id="send2"/></td>
+					<td align="left"><input type="text" /></td>
+					<td align="left"><input type="text" /></td>
+					<td align="left"><input type="text" /></td>
+					<td align="left" class="green"><input type="text" id="hidden"/></td>
+					<td align="left" class="red"><input type="text" id="hidden"/></td>
+				</tr>
+                <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4d4d4';" id="add2">
+					<td align="center"><input type="button" value="Send" id="send3"/></td>
+					<td align="left"><input type="text" /></td>
+					<td align="left"><input type="text" /></td>
+					<td align="left"><input type="text" /></td>
+					<td align="left" class="green"><input type="text" id="hidden"/></td>
+					<td align="left" class="red"><input type="text" id="hidden"/></td>
+				</tr>
+				
 			</table>
 			<table style="float: right">
 				<tr>

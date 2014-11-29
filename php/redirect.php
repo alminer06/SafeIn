@@ -4,7 +4,7 @@
 	if($username == "admin" && $password == "admin"){
 		header("Location: ../admin_page/managesupport(ViewVolunteers).html");	
 	}else{
-		header("Location: ../usernotification.html");		
+		header("Location: ../usernotification(initial).html");		
 	}
 
 ?>

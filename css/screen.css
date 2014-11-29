@@ -1129,3 +1129,24 @@ body{
 	line-height: 35px;
 	font-size: 16px;
 }
+
+#logistic1, #logistic2, #logistic3{
+	display: none;
+}
+
+#add1, #add2{
+	display: none;	
+}
+
+#hidden{
+	background: rgba(10, 77, 112, 0);
+	border: none;
+}
+
+#add_air2, #add_air3, #add_air4, #add_air5{
+	display: none;
+}
+
+#air8, #air9, #air10, #air11, #air12{
+	display: none;
+}

@@ -5,8 +5,81 @@
 <link rel="stylesheet" type="text/css" href="../css/screen.css" />
 <link rel="stylesheet" type="text/css" href="../css/table.css" />
 <link rel="stylesheet" type="text/css" href="../css/pagination.css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <title>Transportation</title>
 </head>
+
+<script>
+
+	$(document).ready(function(){
+		$("#d_add1").click(function(){
+		  $("#air8").css("display", "table-row");
+		  $("#add_air1").css("display", "none");
+		  $("#add_air2").css("display", "table-row");
+		});
+		
+		$("#d_add2").click(function(){
+		  $("#air9").css("display", "table-row");
+		  $("#add_air2").css("display", "none");
+		  $("#add_air3").css("display", "table-row");
+		});
+		
+		$("#d_add3").click(function(){
+		  $("#air10").css("display", "table-row");
+		  $("#add_air3").css("display", "none");
+		  $("#add_air4").css("display", "table-row");
+		});
+		
+		$("#d_add4").click(function(){
+		  $("#air11").css("display", "table-row");
+		  $("#add_air4").css("display", "none");
+		  $("#add_air5").css("display", "table-row");
+		});
+		
+		$("#d_add5").click(function(){
+		  $("#air12").css("display", "table-row");
+		  $("#add_air5").css("display", "none");
+		});
+		
+		$("#del1").click(function(){
+		  $("#air1").css("display", "none");
+		});
+		$("#del2").click(function(){
+		  $("#air2").css("display", "none");
+		});
+		$("#del3").click(function(){
+		  $("#air3").css("display", "none");
+		});
+		$("#del4").click(function(){
+		  $("#air4").css("display", "none");
+		});
+		$("#del5").click(function(){
+		  $("#air5").css("display", "none");
+		});
+		$("#del6").click(function(){
+		  $("#air6").css("display", "none");
+		});
+		$("#del7").click(function(){
+		  $("#air7").css("display", "none");
+		});
+		$("#del8").click(function(){
+		  $("#air8").css("display", "none");
+		});
+		$("#del9").click(function(){
+		  $("#air9").css("display", "none");
+		});
+		$("#del10").click(function(){
+		  $("#air10").css("display", "none");
+		});
+		$("#del11").click(function(){
+		  $("#air11").css("display", "none");
+		});
+		$("#del12").click(function(){
+		  $("#air12").css("display", "none");
+		});
+	});
+	
+</script>
 
 <body>
 
@@ -52,75 +125,124 @@
 					<th align="center" width="200px">Current Location</th>
 					<th align="center" width="200px">Availability</th>
 				</tr>
-				<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4d4d4';">
-					<td align="center">1</td>
+				<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4d4d4';" id="air1">
+					<td align="center"><input type="button" value="Delete" id="del1"/></td>
 					<td align="left">QR4012</td>
 					<td align="left">Plane</td>
 					<td align="left">37.725849, -90.843084</td>
 					<td align="left">Available</td>
 				</tr>
-				<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4d4d4';">
-					<td align="center">2</td>
+				<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4d4d4';" id="air2">
+					<td align="center"><input type="button" value="Delete" id="del2"/></td>
 					<td align="left">QR1992</td>
 					<td align="left">Plane</td>
 					<td align="left">37.725849, -90.843084</td>
 					<td align="left">Available</td>
 				</tr>
-				<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4d4d4';">
-					<td align="center">3</td>
+				<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4d4d4';" id="air3">
+					<td align="center"><input type="button" value="Delete" id="del3"/></td>
 					<td align="left">QR0192</td>
 					<td align="left">Plane</td>
 					<td align="left">29.261822, -94.873666</td>
 					<td align="left">Not Available</td>
 				</tr>
-				<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4d4d4';">
-					<td align="center">4</td>
+				<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4d4d4';" id="air4">
+					<td align="center"><input type="button" value="Delete" id="del4"/></td>
 					<td align="left">HL9102</td>
-					<td align="left">Helicopter</td>
+					<td align="left">Plane</td>
 					<td align="left">37.725849, -90.843084</td>
 					<td align="left">Available</td>
 				</tr>
-				<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4d4d4';">
-					<td align="center">5</td>
+				<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4d4d4';" id="air5">
+					<td align="center"><input type="button" value="Delete" id="del5"/></td>
 					<td align="left">HL7739</td>
-					<td align="left">Helicopter</td>
+					<td align="left">Plane</td>
 					<td align="left">37.725849, -90.843084</td>
 					<td align="left">Available</td>
 				</tr>
-				<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4d4d4';">
-					<td align="center">6</td>
+				<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4d4d4';" id="air6">
+					<td align="center"><input type="button" value="Delete" id="del6"/></td>
 					<td align="left">GT0192</td>
 					<td align="left">Rotorcraft</td>
 					<td align="left">37.725849, -90.843084</td>
 					<td align="left">Available</td>
 				</tr>
-				<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4d4d4';">
-					<td align="center">7</td>
+				<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4d4d4';" id="air7">
+					<td align="center"><input type="button" value="Delete" id="del7"/></td>
 					<td align="left">JG1928</td>
 					<td align="left">Rotorcraft</td>
 					<td align="left">29.261822, -94.873666</td>
 					<td align="left">Not Available</td>
 				</tr>
-				<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4d4d4';">
-					<td align="center">8</td>
+				<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4d4d4';" id="air8">
+					<td align="center"><input type="button" value="Delete" id="del8"/></td>
 					<td align="left">QR1231</td>
-					<td align="left">Plane</td>
+					<td align="left">Helicopter</td>
 					<td align="left">29.261822, -94.873666</td>
-					<td align="left">Not Available</td>
+					<td align="left">Available</td>
 				</tr>
-				<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4d4d4';">
-					<td align="center">9</td>
+				<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4d4d4';" id="air9">
+					<td align="center"><input type="button" value="Delete" id="del9"/></td>
 					<td align="left">HL0091</td>
 					<td align="left">Helicopter</td>
 					<td align="left">37.725849, -90.843084</td>
 					<td align="left">Available</td>
 				</tr>
-				<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4d4d4';">
-					<td align="center">10</td>
-					<td align="left">KL9872</td>
-					<td align="left">Rotorcraft</td>
+				<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4d4d4';" id="air10">
+					<td align="center"><input type="button" value="Delete" id="del10"/></td>
+					<td align="left">HL0094</td>
+					<td align="left">Helicopter</td>
 					<td align="left">37.725849, -90.843084</td>
 					<td align="left">Available</td>
+				</tr>
+				<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4d4d4';" id="air11">
+					<td align="center"><input type="button" value="Delete" id="del11"/></td>
+					<td align="left">HL0102</td>
+					<td align="left">Helicopter</td>
+					<td align="left">37.725849, -90.843084</td>
+					<td align="left">Available</td>
+				</tr>
+				<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4d4d4';" id="air12">
+					<td align="center"><input type="button" value="Delete" id="del12"/></td>
+					<td align="left">HL0155</td>
+					<td align="left">Helicopter</td>
+					<td align="left">37.725849, -90.843084</td>
+					<td align="left">Available</td>
+				</tr>
+				<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4d4d4';" id="add_air1">
+					<td align="center"><input type="button" value="Add" id="d_add1"/></td>
+					<td align="left"><input type="text" /></td>
+					<td align="left"><input type="text" /></td>
+					<td align="left"></td>
+					<td align="left"></td>
+				</tr>
+				<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4d4d4';" id="add_air2">
+					<td align="center"><input type="button" value="Add" id="d_add2"/></td>
+					<td align="left"><input type="text" /></td>
+					<td align="left"><input type="text" /></td>
+					<td align="left"></td>
+					<td align="left"></td>
+				</tr>
+				<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4d4d4';" id="add_air3">
+					<td align="center"><input type="button" value="Add" id="d_add3"/></td>
+					<td align="left"><input type="text" /></td>
+					<td align="left"><input type="text" /></td>
+					<td align="left"></td>
+					<td align="left"></td>
+				</tr>
+				<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4d4d4';" id="add_air4">
+					<td align="center"><input type="button" value="Add" id="d_add4"/></td>
+					<td align="left"><input type="text" /></td>
+					<td align="left"><input type="text" /></td>
+					<td align="left"></td>
+					<td align="left"></td>
+				</tr>
+				<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4d4d4';" id="add_air5">
+					<td align="center"><input type="button" value="Add" id="d_add5"/></td>
+					<td align="left"><input type="text" /></td>
+					<td align="left"><input type="text" /></td>
+					<td align="left"></td>
+					<td align="left"></td>
 				</tr>
 			</table>
 			<table style="float: right">
@@ -129,9 +251,6 @@
 						<ul class="pagination pagination-sm">
 							<li><a href="#"><span aria-hidden="true">&laquo;</span><span class="sr-only">Previous</span></a></li>
 							<li class="active"><span>1 <span class="sr-only">(current)</span></span></li>
-							<li><a href="#">2</a></li>
-							<li><a href="#">3</a></li>
-							<li><a href="#">4</a></li>
 							<li><a href="#"><span aria-hidden="true">&raquo;</span><span class="sr-only">Next</span></a></li>
 						</ul>
 					</td>
