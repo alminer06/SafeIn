@@ -3,7 +3,7 @@
 <file name="login.html" server="C:/wamp/www" local="130604955686207197" remote="130604955680000000" Dst="0" />
 <file name="usernotification.html" server="C:/wamp/www" local="130604914488710835" remote="130604914480000000" Dst="0" />
 <file name="index.html" server="C:/wamp/www" local="130602813504500945" remote="130602813500000000" Dst="0" />
-<file name="index.html" server="C:/wamp/www/SafeIn" local="130625708535959528" remote="130625708530000000" Dst="0" />
+<file name="index.html" server="C:/wamp/www/SafeIn" local="130625979121682188" remote="130625979120000000" Dst="0" />
 <file name="contribute.html" server="C:/wamp/www/SafeIn" local="130625717956175695" remote="130625717950000000" Dst="0" />
 <file name="login.html" server="C:/wamp/www/SafeIn" local="130605780333663656" remote="130605780330000000" Dst="0" />
 <file name="usernotification.html" server="C:/wamp/www/SafeIn" local="130617292895826244" remote="130617292890000000" Dst="0" />
@@ -14,4 +14,6 @@
 <file name="usernotification(confirmation).html" server="C:/wamp/www/SafeIn" local="130606178933429526" remote="130606178930000000" Dst="0" />
 <file name="usernotification(confirmed).html" server="C:/wamp/www/SafeIn" local="130617293636119553" remote="130617293630000000" Dst="0" />
 <file name="usernotification(initial).html" server="C:/wamp/www/SafeIn" local="130617289351416288" remote="130617289350000000" Dst="0" />
+<file name="jquery.js" server="C:/wamp/www/SafeIn" local="130625187020000000" remote="130625187020000000" Dst="0" />
+<file name="jquery-ui.js" server="C:/wamp/www/SafeIn" local="130625187020000000" remote="130625187020000000" Dst="0" />
 </dwsync>

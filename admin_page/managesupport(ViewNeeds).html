@@ -5,7 +5,11 @@
 <link rel="stylesheet" type="text/css" href="../css/screen.css" />
 <link rel="stylesheet" type="text/css" href="../css/table.css" />
 <link rel="stylesheet" type="text/css" href="../css/pagination.css" />
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/theme/jquery-ui.css" />
+<script src="../jquery.js"></script>
+<script src="../jquery-ui.js"></script>
+<!--<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>-->
 <title>Manage Support - View needs</title>
 </head>
 
@@ -33,6 +37,40 @@
 	
 </script>
 
+<script>
+$(function() {
+	$( "#dialog" ).dialog({
+	  autoOpen: false,
+	  show: {
+		effect: "blind",
+		duration: 500
+	  },
+	  hide: {
+		effect: "blind",
+		duration: 500
+	  }
+	});
+	
+	$( "#dialog" ).dialog({
+		autoOpen: false,
+		width: 400,
+		buttons: [
+			{
+				text: "close",
+				click: function() {
+					$( this ).dialog( "close" );
+				}
+			}
+		]
+	});
+
+ 
+	$( "#opener" ).click(function() {
+	  $( "#dialog" ).dialog( "open" );
+	});
+});
+</script>
+
 <body>
 
 	<div id="wrapper">
@@ -50,9 +88,9 @@
             	<div class="category"><div id="triangle"></div>View</div>
                     <a href="managesupport(ViewVolunteers).html"><div class="category_menu">View volunteers</div></a>
                     <a href="managesupport(ViewLogistics).html"><div class="category_menu">View logistics</div></a>
-                    <a href="managesupport(ViewNeeds).html"><div class="category_menu" id="selected_category_menu">View requests</div></a>
-                <div class="category"><div id="triangle"></div>Site</div>
-                	<a href="managesupport(Mapping).html"><div class="category_menu">Mapping</div></a>
+                    <a href="managesupport(Mapping).html"><div class="category_menu" id="selected_category_menu">View requests</div></a>
+            <!--<div class="category"><div id="triangle"></div>Site</div>
+                	<a href="managesupport(Mapping).html"><div class="category_menu">Mapping</div></a>-->
                 <div class="category"><div id="triangle"></div>Status</div>
 					<a href="managesupport(DistributionStatus).html"><div class="category_menu">Distribution status</div></a>
             </div>
@@ -60,14 +98,14 @@
         <div class="admin_content">
         	<div class="title_admin">
 				<h1>Supports Requests - Japan's Earthquake Disaster</h1>
+				<input id="opener" class="button-search" type="button" value="Instruction">
 			</div>
             <div>
             	<div style="float:left">
                 	<h2> Message : </h2>
-                    From: Volunteer<br />
-                    Saturday, November 8 2014 18:30<br /><br />
-                    We request of 10 kg of rice, 20 liters of water,<br />50 packages of noodles, and 5 physician for shelter site-2<br /><br />
-                    Urgency: High
+                    From: User<br />
+                    Saturday, November 8 2014 18:30<br />
+                    We request of 10 kg of rice, 20 liters of water,<br />50 packages of noodles, and 5 physician for shelter site-2
                 </div>
                 <div class="map-thumb" style="float:right">
                     <div>Shelter Site 2 <span class="note">*Click image to see other shelter site</span></div>
@@ -100,70 +138,72 @@
 				<div class="search_box">
 					<form>
 						<input class="search" type="text" placeholder="Search..." required>
-						<input class="button-search"type="button" value="Search">
+						<input class="button-search" type="button" value="Search">
 					</form>
 				</div>
 			</div>
-			
-			<table class="hovertable" width="100%">
-				<tr>
-					<th align="center" width="30px">No</th>
-					<th align="center">Name</th>
-					<th align="center">Type</th>
-					<th align="center">Amount</th>
-					<th align="center">Received</th>
-					<th align="center">Remaining</th>
-				</tr>
-                <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4d4d4';" id="logistic1">
-					<td align="center">1</td>
-					<td align="left">Rice</td>
-					<td align="left">Food</td>
-					<td align="left">10 kg</td>
-					<td align="left" class="green">0 kg</td>
-					<td align="left" class="red">10 kg</td>
-				</tr>
-                <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4d4d4';" id="logistic2">
-					<td align="center">2</td>
-					<td align="left">Water</td>
-					<td align="left">Food</td>
-					<td align="left">20 liters</td>
-					<td align="left" class="green">0 liters</td>
-					<td align="left" class="red">20 liters</td>
-				</tr>
-                <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4d4d4';" id="logistic3">
-					<td align="center">3</td>
-					<td align="left">Noodles</td>
-					<td align="left">Food</td>
-					<td align="left">50 packages</td>
-					<td align="left" class="green">0 package</td>
-					<td align="left" class="red">50 packages</td>
-				</tr>
-				<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4d4d4';" id="add0">
-					<td align="center"><input type="button" value="Send" id="send1"/></td>
-					<td align="left"><input type="text" /></td>
-					<td align="left"><input type="text" /></td>
-					<td align="left"><input type="text" /></td>
-					<td align="left" class="green"><input type="text" id="hidden"/></td>
-					<td align="left" class="red"><input type="text" id="hidden"/></td>
-				</tr>
-                <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4d4d4';" id="add1">
-					<td align="center"><input type="button" value="Send" id="send2"/></td>
-					<td align="left"><input type="text" /></td>
-					<td align="left"><input type="text" /></td>
-					<td align="left"><input type="text" /></td>
-					<td align="left" class="green"><input type="text" id="hidden"/></td>
-					<td align="left" class="red"><input type="text" id="hidden"/></td>
-				</tr>
-                <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4d4d4';" id="add2">
-					<td align="center"><input type="button" value="Send" id="send3"/></td>
-					<td align="left"><input type="text" /></td>
-					<td align="left"><input type="text" /></td>
-					<td align="left"><input type="text" /></td>
-					<td align="left" class="green"><input type="text" id="hidden"/></td>
-					<td align="left" class="red"><input type="text" id="hidden"/></td>
-				</tr>
-				
-			</table>
+			<fieldset>
+				<legend><b>Form Logistic</b></legend>
+				<table class="hovertable" width="100%">
+					<tr>
+						<th align="center" width="30px">No</th>
+						<th align="center" >Name</th>
+						<th align="center" >Type</th>
+						<th align="center" >Amount</th>
+						<th align="center" >Received</th>
+						<th align="center" >Remaining</th>
+					</tr>
+					<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4d4d4';" id="logistic1">
+						<td align="center">1</td>
+						<td align="left">Rice</td>
+						<td align="left">Food</td>
+						<td align="left">10 kg</td>
+						<td align="left" class="green">0 kg</td>
+						<td align="left" class="red">10 kg</td>
+					</tr>
+					<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4d4d4';" id="logistic2">
+						<td align="center">2</td>
+						<td align="left">Water</td>
+						<td align="left">Food</td>
+						<td align="left">20 liters</td>
+						<td align="left" class="green">0 liters</td>
+						<td align="left" class="red">20 liters</td>
+					</tr>
+					<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4d4d4';" id="logistic3">
+						<td align="center">3</td>
+						<td align="left">Noodles</td>
+						<td align="left">Food</td>
+						<td align="left">50 packages</td>
+						<td align="left" class="green">0 package</td>
+						<td align="left" class="red">50 packages</td>
+					</tr>
+					<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4d4d4';" id="add0">
+						<td align="center"><input type="button" value="Send" id="send1"/></td>
+						<td align="left"><input type="text"/></td>
+						<td align="left"><input type="text"/></td>
+						<td align="left"><input type="text"/></td>
+						<td align="left" class="green"><input type="text" id="hidden"/></td>
+						<td align="left" class="red"><input type="text" id="hidden"/></td>
+					</tr>
+					<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4d4d4';" id="add1">
+						<td align="center"><input type="button" value="Send" id="send2"/></td>
+						<td align="left"><input type="text" /></td>
+						<td align="left"><input type="text" /></td>
+						<td align="left"><input type="text" /></td>
+						<td align="left" class="green"><input type="text" id="hidden"/></td>
+						<td align="left" class="red"><input type="text" id="hidden"/></td>
+					</tr>
+					<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4d4d4';" id="add2">
+						<td align="center"><input type="button" value="Send" id="send3"/></td>
+						<td align="left"><input type="text" /></td>
+						<td align="left"><input type="text" /></td>
+						<td align="left"><input type="text" /></td>
+						<td align="left" class="green"><input type="text" id="hidden"/></td>
+						<td align="left" class="red"><input type="text" id="hidden"/></td>
+					</tr>
+					
+				</table>
+			</fieldset>
 			<table style="float: right">
 				<tr>
 					<td>
@@ -175,10 +215,17 @@
 					</td>
 				</tr>
 			</table>
-        </div>  
-       
-        
-        
+        </div>
+		<!-- Dialog Box -->
+		<div id="dialog" title="Instruction">
+			<span style="font-size: 14px;">
+			<ul>
+				<li>Input user needed based on the message from user.</li>
+				<li>This form (at the below page) for input the Logistic.</li>
+				<li>For human Support, click <b>Send Support</b> button, so you will be redirected to another page.</li>
+			</ul>
+			</span>
+		</div>
 	</div>
 
 </body>
