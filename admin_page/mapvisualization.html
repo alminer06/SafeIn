@@ -7,7 +7,9 @@
 <title>Map Visualization</title>
 
 <script>
-	$(document).ready(function() {     
+	$(document).ready(function() { 
+		var id = 0;
+		
 		$('#redpin1').hover(
 			function(){ $('#map_notif1').css("display", "block") },
 			function(){ $('#map_notif1').css("display", "none") }
@@ -19,7 +21,14 @@
 		);
 		
 		$('.map').click(
-			function(){ $('.map').css("background", "url(../images/map0.png)") }
+			function(){ 
+				id++;
+				if(id%2 == 1){
+					$('.map').css("background", "url(../images/map0.png)") 
+				} else {
+					$('.map').css("background", "url(../images/map.jpg)")
+				}
+			}
 		);
 		
 		
