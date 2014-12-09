@@ -80,7 +80,7 @@ body{
 	position: relative;
 	left: 200px;
 	background-color: #67de67;
-	width: 120px;
+	width: 150px;
 	height: 40px;	
 	border: 0px solid;
 	border-radius: 3px;
@@ -88,7 +88,9 @@ body{
 	color: #000;
 	text-align: center;
 	line-height: 40px;
-	font-family: helvetica_light;	
+	font-family: Calibri;
+	font-weight: bold;	
+	font-size: 17px;
 }
 
 .main_button:hover{
@@ -143,7 +145,7 @@ body{
 }
 
 #home_contribute_button{
-	margin-left: 30px;
+	margin-left: 10px;
 }
 
 #about_contribute_button{
