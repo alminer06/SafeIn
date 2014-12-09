@@ -75,58 +75,60 @@ body{
 	font-size: 25px;
 }
 
-#content{
-	position: absolute;
-	width: 100%;
-	top: 0px;
-	left: 0px;
-}
-
-#title{
-	position: absolute;
-	width: 600px;
-	height: 100px;
-	top: 200px;
+.main_button{
+	float: left;
+	position: relative;
 	left: 200px;
-	//background-color: #CCC;
-	color: #eeeeee;
-	font-family: Calibri;
-	font-weight: bold;
-	font-size: 55px;
-	text-shadow: 2px 2px #000000;
-}
-
-#description{
-	position: absolute;
-	width: 500px;
-	height: 200px;
-	left: 200px;
-	top: 300px;	
-	font-family: Calibri;
-	color: #eeeeee;
-	font-size: 18px;
-	font-weight: 600;
-	text-shadow: 1.5px 1.5px #000000;
-}
-
-#about_button{
-	position: absolute;
-	left: 200px;
-	top: 425px;	
-	background-color: #14171f;
+	background-color: #67de67;
 	width: 120px;
 	height: 40px;	
 	border: 0px solid;
 	border-radius: 3px;
 	border-color: #0f1117;
-	color: #eeeeee;
+	color: #000;
 	text-align: center;
 	line-height: 40px;
-	font-family: Calibri;
+	font-family: helvetica_light;	
 }
 
-#about_button:hover{
-	background-color: #1d222d;	
+.main_button:hover{
+	background-color: #43bd43;	
+}
+
+#content{
+	position: absolute;
+	width: 100%;
+	height: 40%;
+	top: 30%;
+	left: 0px;
+}
+
+#content a{
+	text-decoration: none;	
+}
+
+#title{
+	position: relative;
+	width: 600px;
+	left: 200px;
+	color: #ffffff;
+	font-family: Calibri;
+	font-weight: bold;
+	font-size: 55px;
+	text-shadow: 2px 2px 2px #000000;
+}
+
+#description{
+	position: relative;
+	margin-top: 20px;
+	width: 500px;
+	height: 200px;
+	left: 200px;
+	font-family: Calibri;
+	color: #ffffff;
+	font-size: 22px;
+	font-weight: 600;
+	text-shadow: 1px 1.5px 1.5px #000000;
 }
 
 .contribute_button{
@@ -141,15 +143,7 @@ body{
 }
 
 #home_contribute_button{
-	left: 340px;
-	top: 425px;	
-	width: 120px;
-	height: 40px;
-	line-height: 40px;
-}
-
-#home_contribute_button:hover{
-	background-color: #1d222d;	
+	margin-left: 30px;
 }
 
 #about_contribute_button{
@@ -607,7 +601,7 @@ body{
 	font-family: helvetica_light;
 	font-weight: lighter;
 	font-size: 15px;
-	background-color: #1b2337;
+	background-color: #222C4C;
 	width: 200px;
 	height: 35px;
 	position: absolute;
@@ -1149,4 +1143,28 @@ body{
 
 #air8, #air9, #air10, #air11, #air12{
 	display: none;
+}
+
+.instruction, .instruction1, .instruction2, .instruction3, .instruction4, .instruction5{
+	position: absolute;
+	width: 200px;
+	//background: #fff;
+	left: -250px;
+	font-size: 13px;
+	color: red;
+	padding-left: 5px;
+	padding-right: 5px;
+	line-height: 17px; 
+	display: none;
+}
+
+.ask, .ask1, .ask2, .ask3, .ask4, .ask5{
+	position: absolute;
+	left: -30px;
+	font-size: 15px;
+	color: red;
+	padding-left: 5px;
+	padding-right: 5px;
+	border: 0px solid;
+	cursor: pointer;
 }

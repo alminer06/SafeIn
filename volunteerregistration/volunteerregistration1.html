@@ -1,9 +1,29 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" type="text/css" href="../css/screen.css" />
-<title>Volunteer Registration</title>
+	
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="../css/screen.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <title>Volunteer Registration</title>
+    
+    <script>
+		$(document).ready(function(){
+			$('.ask').hover(
+				function(){
+					$('.instruction').css("display","block");
+				}, function(){
+					$('.instruction').css("display","none");
+			});
+			
+			$('.ask1').hover(
+				function(){
+					$('.instruction1').css("display","block");
+				}, function(){
+					$('.instruction1').css("display","none");
+			});
+		});
+	</script>
 </head>
 
 <body>
@@ -25,10 +45,18 @@
             <div id="form">
             	<div class="textbox_label">Full name:<input type="text" class="textbox"></div>
                 <div class="textbox_label">Phone number:<input type="text" class="textbox"></div>
-                <div class="textbox_label">Emergency contact:<input type="text" class="textbox"></div>
+                <div class="textbox_label">
+                	<div class="instruction">Phone number we can contact in case of emergency. e.g. Your parents, close friend, etc.</div>
+                    <div class="ask">?</div>
+                    Emergency contact:<input type="text" class="textbox">
+                </div>
                 <div class="textbox_label">Email address:<input type="text" class="textbox"></div>
                 <div class="textbox_label">Home address:<input type="text" class="textbox"></div>
-                <div class="textbox_label">Health limitation:<input type="text" class="textbox"></div>
+                <div class="textbox_label">
+                	<div class="instruction1">Please tell us if you have any health issue such as heart disease, asthma, diabetes, etc.</div>
+                    <div class="ask1">?</div>
+                	Health limitation:<input type="text" class="textbox">
+                </div>
                	<br />I am willing to volunteer to relief:
                	<div class="textbox_label"><select class="dropdown_menu">
                                                 <option>Japan Eartquake Disaster</option>

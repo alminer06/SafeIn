@@ -1,9 +1,56 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" type="text/css" href="../css/screen.css" />
-<title>Volunteer Registration</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="../css/screen.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <title>Volunteer Registration</title>
+    
+    <script>
+		$(document).ready(function(){
+			$('.ask').hover(
+				function(){
+					$('.instruction').css("display","block");
+				}, function(){
+					$('.instruction').css("display","none");
+			});
+			
+			$('.ask1').hover(
+				function(){
+					$('.instruction1').css("display","block");
+				}, function(){
+					$('.instruction1').css("display","none");
+			});
+			
+			$('.ask2').hover(
+				function(){
+					$('.instruction2').css("display","block");
+				}, function(){
+					$('.instruction2').css("display","none");
+			});
+			
+			$('.ask3').hover(
+				function(){
+					$('.instruction3').css("display","block");
+				}, function(){
+					$('.instruction3').css("display","none");
+			});
+			
+			$('.ask4').hover(
+				function(){
+					$('.instruction4').css("display","block");
+				}, function(){
+					$('.instruction4').css("display","none");
+			});
+			
+			$('.ask5').hover(
+				function(){
+					$('.instruction5').css("display","block");
+				}, function(){
+					$('.instruction5').css("display","none");
+			});
+		});
+	</script>
 </head>
 
 <body>
@@ -23,12 +70,35 @@
                 <div class="bullet_number3"id="selected_bullet">2<div class="bullet_description">Skills</div></div>
             </div>
             <div id="form">
-            	<div class="textbox_label">Vocational skills:<input type="text" class="textbox"></div>
-                <div class="textbox_label">Medical skills:<input type="text" class="textbox"></div>
-                <div class="textbox_label">Communication skills:<input type="text" class="textbox"></div>
-                <div class="textbox_label">Structural skills:<input type="text" class="textbox"></div>
-                <div class="textbox_label">Previous disaster training:<input type="text" class="textbox"></div>
-                <div class="textbox_label">Special training:<input type="text" class="textbox"></div>
+            	<div class="textbox_label">
+                	<div class="instruction">Tell us more about your general skills. e.g. social assistance, construction, food service, etc.</div>
+                    <div class="ask">?</div>
+                	Vocational skills:<input type="text" class="textbox">
+                </div>
+                <div class="textbox_label">
+                	<div class="instruction1">If you are a nurse or doctor, tell us about your specialty.</div>
+                    <div class="ask1">?</div>
+                	Medical skills:<input type="text" class="textbox">
+                </div>
+                <div class="textbox_label">
+                	<div class="instruction2">Tell us more about your communication skills including language capabilities. e.g. public relation, english, french, etc.</div>
+                    <div class="ask2">?</div>
+                	Communication skills:<input type="text" class="textbox">
+                </div>
+                <div class="textbox_label">
+                	<div class="instruction3">Tell us more about your structural skills such as metal construction, wood construction, electrical, etc.</div>
+                    <div class="ask3">?</div>
+                	Structural skills:<input type="text" class="textbox">
+                </div>
+                <div class="textbox_label">
+                	<div class="instruction4">Tell us more about your service skills such as elderly/ disabled assistance, child care, social work, etc.</div>
+                    <div class="ask4">?</div>
+                	Service skills:<input type="text" class="textbox">
+                </div>
+                <div class="textbox_label">
+                
+                	Previous disaster training:<input type="text" class="textbox">
+                </div>
                 <a href="volunteerregistration3.html"><div class="continue_button">Submit</div></a>
             	<br /><br /><br />
             </div>

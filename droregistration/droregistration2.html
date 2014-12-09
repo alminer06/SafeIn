@@ -1,9 +1,56 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" type="text/css" href="../css/screen.css" />
-<title>DRO Registration</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="../css/screen.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <title>DRO Registration</title>
+
+	<script>
+		$(document).ready(function(){
+			$('.ask').hover(
+				function(){
+					$('.instruction').css("display","block");
+				}, function(){
+					$('.instruction').css("display","none");
+			});
+			
+			$('.ask1').hover(
+				function(){
+					$('.instruction1').css("display","block");
+				}, function(){
+					$('.instruction1').css("display","none");
+			});
+			
+			$('.ask2').hover(
+				function(){
+					$('.instruction2').css("display","block");
+				}, function(){
+					$('.instruction2').css("display","none");
+			});
+			
+			$('.ask3').hover(
+				function(){
+					$('.instruction3').css("display","block");
+				}, function(){
+					$('.instruction3').css("display","none");
+			});
+			
+			$('.ask4').hover(
+				function(){
+					$('.instruction4').css("display","block");
+				}, function(){
+					$('.instruction4').css("display","none");
+			});
+			
+			$('.ask5').hover(
+				function(){
+					$('.instruction5').css("display","block");
+				}, function(){
+					$('.instruction5').css("display","none");
+			});
+		});
+	</script>
 </head>
 
 <body>
@@ -23,11 +70,22 @@
                 <div class="bullet_number3" id="selected_bullet">2<div class="bullet_description">Support Details</div></div>
             </div>
             <div id="form">
-            	<div class="textbox_label">Logistics supports:<input type="text" class="textbox"></div>
-                <div class="textbox_label">Human supports:<input type="text" class="textbox"></div>
-                <div class="textbox_label">Vehicles:<input type="text" class="textbox"></div>
-                <div class="textbox_label">Additional supports:<input type="text" class="textbox"></div>
-                <div class="textbox_label">Website:<input type="text" class="textbox"></div>
+            	<div class="textbox_label">
+                	<div class="instruction">Tell us more about the logistic supports you can provide such as food, clothes, medicine, etc.</div>
+                    <div class="ask">?</div>
+                	Logistics supports:<input type="text" class="textbox"></div>
+                <div class="textbox_label">
+                	<div class="instruction1">Tell us more about the human supports you can provide such as elderly/ diasabled assistant, child care, medical assistant, construction worker, etc.</div>
+                    <div class="ask1">?</div>
+                	Human supports:<input type="text" class="textbox"></div>
+                <div class="textbox_label">
+                	<div class="instruction2">Tell us more about the vehicles you can provide such as car, truck, etc.</div>
+                    <div class="ask2">?</div>
+                	Vehicles:<input type="text" class="textbox"></div>
+                <div class="textbox_label">
+                	<div class="instruction3">If you have any additional supports you can give, please tell us.</div>
+                    <div class="ask3">?</div>
+                	Additional supports:<input type="text" class="textbox"></div>
                 <a href="droregistration3.html"><div class="continue_button">Submit</div></a>
                 <br /><br /><br />
             </div>           
