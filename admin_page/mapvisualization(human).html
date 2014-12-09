@@ -7,14 +7,23 @@
 <title>Map Visualization</title>
 
 <script>
-	$(document).ready(function() {     
+	$(document).ready(function() {  
+		var id = 0;
+		
 		$('#bluepin1').hover(
 			function(){ $('#map_notif0').css("display", "block") },
 			function(){ $('#map_notif0').css("display", "none") }
 		);
 		
 		$('.map').click(
-			function(){ $('.map').css("background", "url(../images/map0.png)") }
+			function(){ 
+				id++;
+				if(id%2 == 1){
+					$('.map').css("background", "url(../images/map0.png)") 
+				} else {
+					$('.map').css("background", "url(../images/map.jpg)")
+				}
+			}
 		);
 	});
 	
