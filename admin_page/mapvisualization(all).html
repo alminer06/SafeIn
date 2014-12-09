@@ -3,25 +3,45 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" type="text/css" href="../css/screen.css" />
-<script src="../jquery.min.js"></script>
+<script src = "../jquery-1.11.1.js"> </script>
 <title>Map Visualization</title>
-</head>
 
 <script>
-	$(function() {
 
-		 $('.map_notif').each(function(k,v){
-			   var box = $(this).dialog({ modal:true, resizable:false,autoOpen: false });
-					$(this).parent().find('.ui-dialog-titlebar-close').hide();
-			 
-				 $( "#redpin" + k ).mouseover(function() {
-					box.dialog( "open" );
-					}).mouseout(function() {
-					box.dialog( "close" );
-				});
-		  });
+	
+	$(document).ready(function() {    
+		var id = 0;
+		$('#bluepin1').hover(
+			function(){ $('#map_notif0').css("display", "block") },
+			function(){ $('#map_notif0').css("display", "none") }
+		);
+   
+		$('#redpin1').hover(
+			function(){ $('#map_notif1').css("display", "block") },
+			function(){ $('#map_notif1').css("display", "none") }
+		);
+  
+		$('#redpin2').hover(
+			function(){ $('#map_notif2').css("display", "block") },
+			function(){ $('#map_notif2').css("display", "none") }
+		);
+	
+		$('.map').click(
+			function(){ 
+				id++;
+				if(id%2 == 1){
+					$('.map').css("background", "url(../images/map0.png)") 
+				} else {
+					$('.map').css("background", "url(../images/map.jpg)")
+				}
+			}
+		);
 	});
+	
 </script>
+
+</head>
+
 
 <body>
 
@@ -45,11 +65,15 @@
         </div>
         <div class="admin_content">
         	<div class="map">
-                <div class="bluepin" id="bluepin1"></div>
+                <div class="bluepin" id="bluepin1">
+					<div class="map_notif" id="map_notif0"></div>
+				</div>
                 <div class="redpin" id="redpin1">
                 	<div class="map_notif" id="map_notif1"></div>
                 </div>
-                <div class="redpin" id="redpin2"></div>
+                <div class="redpin" id="redpin2">
+					<div class="map_notif" id="map_notif2"></div>
+				</div>
             </div>
         </div>  
        

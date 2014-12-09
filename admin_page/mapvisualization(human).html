@@ -3,7 +3,25 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" type="text/css" href="../css/screen.css" />
+<script src = "../jquery-1.11.1.js"> </script>
 <title>Map Visualization</title>
+
+<script>
+	$(document).ready(function() {     
+		$('#bluepin1').hover(
+			function(){ $('#map_notif0').css("display", "block") },
+			function(){ $('#map_notif0').css("display", "none") }
+		);
+		
+		$('.map').click(
+			function(){ $('.map').css("background", "url(../images/map0.png)") }
+		);
+	});
+	
+	
+
+</script>
+
 </head>
 
 <body>
@@ -28,7 +46,9 @@
         </div>
         <div class="admin_content">
         	<div class="map">
-                <div class="bluepin" id="bluepin1"></div>
+                <div class="bluepin" id="bluepin1">
+					<div class="map_notif" id="map_notif0"></div>
+				</div>
             </div>
         </div>  
        

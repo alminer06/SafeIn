@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 /* CSS Document */
 
 @font-face{
@@ -1078,6 +1078,7 @@ body{
 	background:url(../images/notif.png);
 	position: absolute;
 	top: -150px;	
+	display: none;
 }
 
 #vehicle_wrapper{

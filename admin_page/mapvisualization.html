@@ -3,7 +3,30 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" type="text/css" href="../css/screen.css" />
+<script src = "../jquery-1.11.1.js"> </script>
 <title>Map Visualization</title>
+
+<script>
+	$(document).ready(function() {     
+		$('#redpin1').hover(
+			function(){ $('#map_notif1').css("display", "block") },
+			function(){ $('#map_notif1').css("display", "none") }
+		);
+   
+		$('#redpin2').hover(
+			function(){ $('#map_notif2').css("display", "block") },
+			function(){ $('#map_notif2').css("display", "none") }
+		);
+		
+		$('.map').click(
+			function(){ $('.map').css("background", "url(../images/map0.png)") }
+		);
+		
+		
+	});
+
+</script>
+
 </head>
 
 <body>
@@ -28,8 +51,12 @@
         </div>
         <div class="admin_content">
         	<div class="map">
-                <div class="redpin" id="redpin1"></div>
-                <div class="redpin" id="redpin2"></div>
+                <div class="redpin" id="redpin1">
+					<div class="map_notif" id="map_notif1"></div>
+				</div>
+                <div class="redpin" id="redpin2">
+					<div class="map_notif" id="map_notif2"></div>
+				</div>
             </div>
         </div>  
        
